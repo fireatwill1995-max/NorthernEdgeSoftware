@@ -1,0 +1,4 @@
+# Optional: keep deploy small; uncomment to exclude
+# *.pdf
+.DS_Store
+node_modules
