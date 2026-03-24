@@ -1,0 +1,23 @@
+# Fly.io app config — Northern Edge Software
+# Deploy: fly deploy
+# URL: https://northern-edge-software.fly.dev (or connect a custom domain in Fly dashboard)
+
+app = "northern-edge-software"
+
+[build]
+
+[env]
+  PORT = "80"
+
+[http_service]
+  internal_port = 80
+  force_https = true
+  auto_stop_machines = true
+  auto_start_machines = true
+  min_machines_running = 0
+  processes = ["app"]
+
+[[vm]]
+  memory = "256mb"
+  cpu_kind = "shared"
+  cpus = 1
