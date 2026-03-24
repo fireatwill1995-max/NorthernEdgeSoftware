@@ -771,7 +771,7 @@ select:focus-visible {
 /* ==================== TECHNOLOGY ==================== */
 .tech-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 1.25rem;
 }
 
@@ -1042,6 +1042,9 @@ select:focus-visible {
 .portfolio-grid .anim-fade-up:nth-child(2) { transition-delay: 0.1s; }
 .portfolio-grid .anim-fade-up:nth-child(3) { transition-delay: 0.2s; }
 .portfolio-grid .anim-fade-up:nth-child(4) { transition-delay: 0.3s; }
+.portfolio-grid .anim-fade-up:nth-child(5) { transition-delay: 0.2s; }
+
+.services-grid .anim-fade-up:nth-child(7) { transition-delay: 0.2s; }
 
 .process-grid .anim-fade-up:nth-child(2) { transition-delay: 0.1s; }
 .process-grid .anim-fade-up:nth-child(3) { transition-delay: 0.2s; }
@@ -1052,6 +1055,8 @@ select:focus-visible {
 .tech-grid .anim-fade-up:nth-child(4) { transition-delay: 0.15s; }
 .tech-grid .anim-fade-up:nth-child(5) { transition-delay: 0.25s; }
 .tech-grid .anim-fade-up:nth-child(6) { transition-delay: 0.3s; }
+.tech-grid .anim-fade-up:nth-child(7) { transition-delay: 0.2s; }
+.tech-grid .anim-fade-up:nth-child(8) { transition-delay: 0.3s; }
 
 /* ==================== RESPONSIVE ==================== */
 @media (max-width: 1024px) {
@@ -1063,6 +1068,13 @@ select:focus-visible {
   }
   .tech-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .contact-grid {
+    grid-template-columns: 1fr 1.2fr;
   }
   .footer-content {
     grid-template-columns: 1fr 1fr;
